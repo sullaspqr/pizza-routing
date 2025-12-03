@@ -1,6 +1,7 @@
 import { Routes, Route, NavLink } from "react-router-dom"
 import { Pizzak } from "./pages/Pizzak"
 import { Pizza } from "./pages/Pizza"
+import { UjPizza } from "./pages/UjPizza"
 
 import './App.css'
 
@@ -47,6 +48,7 @@ export const App = () => {
         <Routes>
           <Route path="/pizzak" element={<Pizzak />} />
           <Route path="pizza/:pizzaId" element={<Pizza />} />
+          <Route path="/new-pizza" element={<UjPizza />} />
         </Routes>
     </>
   )
